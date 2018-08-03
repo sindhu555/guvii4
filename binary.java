@@ -8,17 +8,24 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-		Scanner sc=new Scanner(System.in);
-		String str=sc.nextLine();
-		int count=0;
-		for(int i=0;i<str.length();i++)
+				Scanner sc=new Scanner(System.in);
+		int[] a=new int[10];
+		for(int i=0;i<10;i++)
 		{
-			if(str.charAt(i)=='1' || str.charAt(i)=='0')
-			count++;
+			a[i]=sc.nextInt();
 		}
-		if(count==str.length())
-			System.out.println("yes");
-		else
-			System.out.println("no");
+		for(int i=0;i<10;i++)
+		{
+			for(int j=0;j<10-i-1;j++)
+			{
+				if(a[j]>a[j+1])
+				{
+					int temp=a[j];
+					a[j]=a[j+1];
+					a[j+1]=temp;
+				}
+			}
+		}
+		System.out.println(a[0]);
 	}
 }

@@ -8,11 +8,12 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-		                   Scanner sc=new Scanner(System.in);
+		  Scanner sc=new Scanner(System.in);
                 int n=sc.nextInt();
-                n=(n/10)*10;
-                n+=10;
-                System.out.println(n);
+                if(n%7==0)
+            	System.out.println("yes");
+            else
+            	System.out.println("no");
 	}
-}	
-	
+}	                 
+

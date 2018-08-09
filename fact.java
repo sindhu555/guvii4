@@ -8,11 +8,11 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-		Scanner sc=new Scanner(System.in);
-		String str=sc.nextLine();
-		for(int i=str.length()-1;i>=0;i--)
-		{
-			System.out.print(str.charAt(i));
-		}
+			Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int fact=1;
+		for(int i=1;i<=n;i++)
+		fact *=i;
+		System.out.println(fact);
 	}
-}
+}	

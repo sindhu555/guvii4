@@ -8,11 +8,13 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-		Scanner sc=new Scanner(System.in);
-	int n=sc.nextInt();
-	if(n%13==0)
-		System.out.println("yes");
-	else
-		System.out.println("no");
+			Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		int pro=a*b;
+		int div=pro/c;
+		System.out.println(div);
 	}
-}
+}	
+		

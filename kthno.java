@@ -10,7 +10,10 @@ class Ideone
 		// your code goes here
 			Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int celsius=n+273;
-		System.out.println(celsius);
+		int k=sc.nextInt();
+		int[] a=new int[n];
+		for(int i=0;i<n;i++)
+		a[i]=sc.nextInt();
+		System.out.println(a[--k]);
 	}
 }

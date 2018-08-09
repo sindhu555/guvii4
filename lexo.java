@@ -8,12 +8,10 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-			Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		int k=sc.nextInt();
-		int[] a=new int[n];
-		for(int i=0;i<n;i++)
-		a[i]=sc.nextInt();
-		System.out.println(a[--k]);
+		Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine();
+		char c[]=str.toCharArray();
+		Arrays.sort(c);
+		System.out.println(c);
 	}
 }

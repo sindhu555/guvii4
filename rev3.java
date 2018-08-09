@@ -8,11 +8,15 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-			Scanner sc=new Scanner(System.in);
+				Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int fact=1;
-		for(int i=1;i<=n;i++)
-		fact *=i;
-		System.out.println(fact);
+		int rem=0,rev=0;
+		while(n>0)
+		{
+			rem=n%10;
+			rev=rev*10+rem;
+			n=n/10;
+		}
+		System.out.println(rev);
 	}
 }	

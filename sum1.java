@@ -10,13 +10,14 @@ class Ideone
 		// your code goes here
 				Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int rem=0,rev=0;
-		while(n>0)
+		int sum=0,i;
+		int [] a=new int[n];
+		for(i=0;i<n;i++)
+		a[i]=sc.nextInt();
+		for(i=0;i<n;i++)
 		{
-			rem=n%10;
-			rev=rev*10+rem;
-			n=n/10;
+			sum +=a[i];
 		}
-		System.out.println(rev);
+		System.out.println(sum);
 	}
-}	
+}

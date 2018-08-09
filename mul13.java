@@ -8,9 +8,11 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-	Scanner sc=new Scanner(System.in);
-	char c=sc.next().charAt(0);
-	int a=c;
-		System.out.println(a);
+		Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+	if(n%13==0)
+		System.out.println("yes");
+	else
+		System.out.println("no");
 	}
 }

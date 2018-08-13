@@ -1,4 +1,7 @@
-	char Str1[100], Str2[100];
+	#include <stdio.h>
+
+        int main(void) {
+        char Str1[100], Str2[100];
   	int result,i;
  
   	
